@@ -18,6 +18,7 @@ export class InputComponent implements OnInit {
     this.list = this.list.filter(item=>(item.id != id));
   }
 
+
   constructor() { }
 
   ngOnInit(): void {
