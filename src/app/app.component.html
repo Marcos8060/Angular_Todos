@@ -1,0 +1,9 @@
+<div class="input_container">
+  <h3>New Todo</h3>
+  <input type="text" placeholder="Enter Task" #task>
+  <button (click)="addTask(task.value);task.value=''"><i class="fa fa-plus"></i>Add</button>
+  <ul *ngFor="let item of list">
+      <li>{{item.name}}</li>
+      <i (click)="removeTask(item.id)" class="material-icons">delete</i>
+  </ul>
+</div>
